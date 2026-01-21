@@ -14,12 +14,22 @@ app.use(cors());
 // Database Connection
 const connectDB = async () => {
     try {
-        await mongoose.connect(process.env.MONGO_URI);
-        console.log('MongoDB Connected');
+        await mongoose.connect(process.env.MONGO_URI, { serverSelectionTimeoutMS: 5000 });
+        console.log('MongoDB Connected (Local)');
     } catch (err) {
-        console.error('MongoDB Connection Error:', err.message);
-        // Do not strict exit, retry logic or just log in dev
-        // process.exit(1);
+        console.log('Local MongoDB not found, switching to In-Memory Database...');
+        try {
+            // Lazy load to avoid crash if not installed yet
+            const { MongoMemoryServer } = require('mongodb-memory-server');
+            const mongod = await MongoMemoryServer.create();
+            const uri = mongod.getUri();
+            await mongoose.connect(uri);
+            console.log('MongoDB Connected (In-Memory) - Ready to use!');
+            console.log('NOTE: Data will be reset when server restarts.');
+        } catch (memErr) {
+            console.error('MongoDB Connection Error:', memErr.message);
+            console.error('ensure you have mongodb installed or mongodb-memory-server');
+        }
     }
 };
 
