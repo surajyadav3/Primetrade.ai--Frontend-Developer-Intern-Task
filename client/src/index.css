@@ -1,6 +1,5 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@plugin "daisyui";
 
 :root {
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
@@ -19,13 +18,16 @@ body {
 ::-webkit-scrollbar {
   width: 8px;
 }
+
 ::-webkit-scrollbar-track {
   background: transparent;
 }
+
 ::-webkit-scrollbar-thumb {
   background: #4b5563;
   border-radius: 4px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background: #374151;
 }
