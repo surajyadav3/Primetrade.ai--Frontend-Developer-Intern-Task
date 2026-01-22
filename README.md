@@ -7,22 +7,22 @@ Includes authentication, task management, filtering, and a beautiful modern UI.
 ## 🎨 Screenshots
 
 ### 🏠 Landing Page
-![Landing](/mnt/data/3307e4a9-205b-4c14-ba25-6619482fc24e.png)
+![Landing](assets/screenshots/landing.png)
 
 ### 📝 Register Page
-![Register](/mnt/data/7d879e75-8e03-47bc-b830-3939dd7f6945.png)
+![Register](assets/screenshots/register.png)
 
 ### 🔐 Login Page
-![Login](/mnt/data/bc770dac-7ea0-4152-953b-476edda9186d.png)
+![Login](assets/screenshots/login.png)
 
 ### 📊 Dashboard
-![Dashboard](/mnt/data/7906e7b4-d676-4690-8025-41e12b26a9ef.png)
+![Dashboard](assets/screenshots/dashboard.png)
 
 ### 🚀 Deploy Task
-![Deploy Task](/mnt/data/87951fc5-52b6-4aed-9874-ba8254d8ef6a.png)
+![Deploy Task](assets/screenshots/deploy.png)
 
 ### 📁 Task Created
-![Task Created](/mnt/data/87b2afd1-321d-4ca0-a34d-6d386439ff11.png)
+![Task Created](assets/screenshots/task-created.png)
 
 ---
 
@@ -35,32 +35,23 @@ It features a full-stack architecture with a React frontend and Node.js/Express 
 
 ## ✨ Features
 
-- **🔐 Authentication**  
-  Secure JWT-based signup and login with password hashing.
-
-- **📊 Dashboard**  
-  Interactive dashboard with CRUD operations for tasks.
-
-- **🔎 Filtering**  
-  Search and filter tasks by status.
-
-- **🎨 Design**  
-  Premium Glassmorphism UI using Vanilla CSS and React.
-
-- **🛡️ Security**  
-  Protected routes and secure token practices.
+- **🔐 Authentication**: Secure JWT signup/login with hashing  
+- **📊 Dashboard**: CRUD for tasks  
+- **🔎 Filtering**: Search and filter tasks by status  
+- **🎨 UI**: Glassmorphism, responsive, premium feel  
+- **🛡️ Security**: Protected routes + JWT
 
 ---
 
 ## 🛠️ Tech Stack
 
-### **Frontend**
+### Frontend
 - React (Vite)
 - Vanilla CSS (Glassmorphism)
 - Axios
-- Lucide-React
+- Lucide-React Icons
 
-### **Backend**
+### Backend
 - Node.js
 - Express
 - MongoDB (Mongoose)
@@ -71,14 +62,13 @@ It features a full-stack architecture with a React frontend and Node.js/Express 
 
 ## 📦 Installation & Setup
 
-### ✅ Prerequisites
-- Node.js installed
+### Prerequisites
+- Node.js
 - MongoDB running locally (`mongodb://127.0.0.1:27017`)
-- Update `server/.env` if needed
 
 ---
 
-## 🔧 1. Setup Backend
+### 1️⃣ Backend Setup
 
 ```bash
 cd server
