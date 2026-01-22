@@ -1,74 +1,55 @@
 # PrimeTrade – Intern Assessment  
 A modern, scalable full-stack web application built as part of the Frontend Developer Intern assignment.  
-Includes authentication, task management, filtering, and a beautiful modern UI.
+It includes authentication, task management, filtering, and a premium modern UI.
 
 ---
 
-## 🎨 Screenshots
+## 🚀 Features
 
-### 🏠 Landing Page
-![Landing](assets/screenshots/landing.png)
+- **🔐 Authentication**  
+  Secure JWT-based signup & login with password hashing.
 
-### 📝 Register Page
-![Register](assets/screenshots/register.png)
+- **📊 Dashboard**  
+  Manage tasks with full CRUD functionality.
 
-### 🔐 Login Page
-![Login](assets/screenshots/login.png)
+- **🔎 Filtering & Search**  
+  Filter tasks by status and search instantly.
 
-### 📊 Dashboard
-![Dashboard](assets/screenshots/dashboard.png)
+- **🎨 Modern UI**  
+  Glassmorphism styling using Vanilla CSS + React components.
 
-### 🚀 Deploy Task
-![Deploy Task](assets/screenshots/deploy.png)
-
-### 📁 Task Created
-![Task Created](assets/screenshots/task-created.png)
-
----
-
-# 🚀 PrimeTrade Intern Assessment - Scalable Web App  
-
-This is a modern, scalable web application built as part of the **Frontend Developer Intern assignment**.  
-It features a full-stack architecture with a React frontend and Node.js/Express backend.
-
----
-
-## ✨ Features
-
-- **🔐 Authentication**: Secure JWT signup/login with hashing  
-- **📊 Dashboard**: CRUD for tasks  
-- **🔎 Filtering**: Search and filter tasks by status  
-- **🎨 UI**: Glassmorphism, responsive, premium feel  
-- **🛡️ Security**: Protected routes + JWT
+- **🛡️ Security**  
+  Protected routes, JWT validation, and secure token handling.
 
 ---
 
 ## 🛠️ Tech Stack
 
-### Frontend
+### **Frontend**
 - React (Vite)
-- Vanilla CSS (Glassmorphism)
 - Axios
+- Vanilla CSS (Glassmorphism)
 - Lucide-React Icons
 
-### Backend
+### **Backend**
 - Node.js
-- Express
-- MongoDB (Mongoose)
-- JWT
-- Bcrypt
+- Express.js
+- MongoDB + Mongoose
+- JWT Authentication
+- Bcrypt Password Hashing
 
 ---
 
 ## 📦 Installation & Setup
 
-### Prerequisites
-- Node.js
-- MongoDB running locally (`mongodb://127.0.0.1:27017`)
+### **Prerequisites**
+- Node.js installed  
+- MongoDB running locally (default: `mongodb://127.0.0.1:27017`)  
+- Update `server/.env` as needed  
 
 ---
 
-### 1️⃣ Backend Setup
+### **1️⃣ Backend Setup**
 
 ```bash
 cd server
