@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "dev:log": "vite | Tee-Object -FilePath \"../logs/combined.log\" -Append",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
